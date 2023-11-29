@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useRef } from 'react';
 import './App.css';
 
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import Navigation from './components/Navigation/Navigation';
+import Portfolio from './components/Portfolio/Portfolio';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Services from './components/Services/Services';
+
 function App() {
+  const about = useRef<null | HTMLDivElement>(null);
+  const contact = useRef<null | HTMLDivElement>(null);
+  const portfolio = useRef<null | HTMLDivElement>(null);
+  const services = useRef<null | HTMLDivElement>(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation options={[about, services, portfolio, contact]} />
+      <About forwardRef={ about } />
+      <Services forwardRef={ services } />
+      <Portfolio forwardRef={ portfolio } />
+      <Contact forwardRef={ contact } />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

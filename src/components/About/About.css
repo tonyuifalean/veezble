@@ -1,0 +1,31 @@
+div.about-section-wrapper {
+  margin: 0 auto;
+  margin-top: 32px;
+  max-width: 80rem;
+  padding: 0 2rem;
+}
+
+div.about-section {
+  background: linear-gradient(135deg, #02000B 0%, #F6D33C 100%);
+  border-radius: 48px;
+  height: 680px;
+}
+
+div.about-section > div {
+  padding: 4rem;
+}
+
+div.about-section h1 {
+  font-size: 4rem;
+}
+
+div.about-section p {
+  font-size: 2rem;
+  line-height: normal;
+}
+
+div.about-section button {
+  background-color: #F4AE5D;
+  height: 2.5rem;
+  width: 7.5rem;
+}

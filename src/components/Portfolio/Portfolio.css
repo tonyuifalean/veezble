@@ -1,0 +1,15 @@
+.portfolio-section-wrapper {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 80rem;
+  padding: 0 2rem;
+}
+
+.portfolio-section-wrapper .clients-wrapper {
+  gap: 2rem;
+  margin-top: 32px;
+}
+
+.portfolio-section-wrapper .clients-wrapper img {
+  height: 40px;
+}
